@@ -3,21 +3,21 @@ import { ADD_TODO } from "../action/action-types";
 const initialState = [
   {
     id: 0,
-    title: "first task",
-    desc: "still the first thing",
-    desc2: "Hi",
+    title: "Initial first task ID 0",
+    desc: "Second text box item on ID 0",
+    desc2: "Third text box item on ID ",
   },
   {
     id: 1,
-    title: "second task",
-    desc: "next thing thing",
-    desc2: "Hi",
+    title: "Initial first task ID 1",
+    desc: "Second text box item on ID 1",
+    desc2: "Third text box item on ID 1",
   },
   {
     id: 2,
-    title: "second task",
-    desc: "next thing thing",
-    desc2: "Hi",
+    title: "Initial first task ID 2",
+    desc: "Second text box item on ID 2",
+    desc2: "Third text box item on ID 2",
   }
 
 
