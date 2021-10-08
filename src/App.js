@@ -11,6 +11,7 @@ function App(props) {
   const [state, setState] = useState({
     titleinput: "",
     discription: "",
+    discription2: "",
 
   })
   const { todos, addTodo } = props
@@ -25,12 +26,16 @@ function App(props) {
 
   }
 
+  const onTextTestChange = (event) => {
+    setState({...state,texttest:event.target.value})
 
+  }
   const onButtonClick = () => {
     console.log(state)
     addTodo({
       title: state.titleinput,
-      desc: state.discription
+      desc: state.discription,
+      desc2: state.texttest,
     })
   }
   
@@ -40,9 +45,10 @@ function App(props) {
 
   return (
     <div className="App">
-      <h1>todos 🤣</h1>
+      <h1>todos 👀😁👌</h1>
       <input type="text" id="title" value={state.titleinput} onChange={event => onTitleChange(event)} />
       <input type="text" id="discription" value={state.discription} onChange={event => onDiscriptionChange(event)} />
+      <input type="text" id="texttest"  value={state.texttest} onChange={event => onTextTestChange(event)}/>
       <button onClick={onButtonClick}>Click Me</button>
       <ol>
         {
